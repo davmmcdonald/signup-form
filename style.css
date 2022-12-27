@@ -1,0 +1,27 @@
+:root {
+
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+}
+
+footer {
+
+}
+
+.section {
+    flex: 1;
+    background-color: white;
+}
+
+.graphic {
+    flex: 2;
+    background-color: #DA70D6;
+    max-height: 100vh;
+}
+
+.sketch {
+    max-height: 100vh;
+}
