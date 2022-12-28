@@ -8,13 +8,35 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@300;400;600&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 </head>
 <body>
-    <div class="section">
-
-    </div>
-    <div class="graphic">
-        <img class="sketch" src="assets/AdobeStock_131921934.svg">
-    </div>
+    <main>
+        <div class="column-left">
+            <p class="logo"><a href="#" target="_blank">orch.id</a></p>
+            <form>
+                <h1 class="title">Signup Form</h1>
+                <p class="instruction">Already created an account? <a href="#" target="_blank">Login</a></p>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                <label for="confirm">Confirm Password</label>
+                <input type="password" id="confirm" name="confirm">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="column-right">
+            <img class="graphic" src="assets/AdobeStock_290674930.svg">
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear())</script> David McDonald | <a href="https://github.com/davmmcdonald" target="_blank">View GitHub Profile <i class="lab la-github"></i></a></p>
+    </footer>
 </body>
 </html>

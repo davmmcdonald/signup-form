@@ -1,27 +1,117 @@
 :root {
-
+    --primary-color: #DA70D6;
+    --secondary-color: #888;
+    --background-color: #fff;
 }
 
 body {
-    display: flex;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--background-color);
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    flex: 1;
+    display: flex;
 }
 
 footer {
-
+    flex: 0;
+    padding: 12px;
+    background-color: #000;
+    font-size: 13px;
+    color: var(--background-color);
+    text-align: center;
 }
 
-.section {
-    flex: 1;
-    background-color: white;
+footer a {
+    color: inherit;
+}
+
+.column-left {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    border-left: solid 8px var(--primary-color);
+}
+
+.column-right {
+    flex: 3;
+    padding-bottom: 16px;
+    background-color: var(--primary-color);
 }
 
 .graphic {
-    flex: 2;
-    background-color: #DA70D6;
-    max-height: 100vh;
+    height: 100%;
+    position: relative;
+    left: -5vw;
 }
 
-.sketch {
-    max-height: 100vh;
+.logo {
+    margin: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    color: var(--primary-color);
+}
+
+.logo a {
+    color: inherit;
+    text-decoration: none;
+}
+
+form {
+    max-width: 400px;
+    padding: 16px;
+    margin: auto;
+}
+
+label {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+input {
+    z-index: 9999;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin: 4px 0 12px 0;
+    background-color: var(--background-color);
+    border: solid 1px var(--secondary-color);
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 12px;
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    color: var(--background-color);
+    cursor: pointer;
+}
+
+.title {
+    margin-bottom: 32px;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+}
+
+.instruction {
+    margin-bottom: 32px;
+}
+
+.instruction a {
+    color: var(--primary-color);
+}
+
+@media only screen and (max-width: 800px) {
+    .column-right {
+        display: none;
+    }
 }
