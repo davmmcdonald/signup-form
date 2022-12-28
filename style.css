@@ -47,7 +47,7 @@ footer a {
 .graphic {
     height: 100%;
     position: relative;
-    left: -5vw;
+    left: calc(-32px - 5vw);
 }
 
 .logo {
