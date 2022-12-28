@@ -63,6 +63,8 @@ footer a {
 }
 
 form {
+    z-index: 9999;
+    position: relative;
     max-width: 400px;
     padding: 16px;
     margin: auto;
@@ -74,8 +76,6 @@ label {
 }
 
 input {
-    z-index: 9999;
-    position: relative;
     width: 100%;
     box-sizing: border-box;
     padding: 8px;
@@ -83,6 +83,10 @@ input {
     background-color: var(--background-color);
     border: solid 1px var(--secondary-color);
     border-radius: 4px;
+}
+
+input:focus {
+    outline: none;
 }
 
 button {
@@ -108,6 +112,23 @@ button {
 
 .instruction a {
     color: var(--primary-color);
+}
+
+.visibility {
+    float: right;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: underline;
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.match {
+    float: right;
+    color: #008000;
+    visibility: hidden;
 }
 
 @media only screen and (max-width: 800px) {

@@ -7,7 +7,7 @@
     <title>Signup Form</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@300;400;600&family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -20,16 +20,16 @@
                 <h1 class="title">Signup Form</h1>
                 <p class="instruction">Already created an account? <a href="#" target="_blank">Login</a></p>
                 <label for="name">Full Name</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" required>
                 <label for="email">Email Address</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
                 <label for="phone">Phone Number</label>
                 <input type="tel" id="phone" name="phone">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password">
-                <label for="confirm">Confirm Password</label>
-                <input type="password" id="confirm" name="confirm">
-                <button type="submit">Submit</button>
+                <label for="password">Password<span class="visibility">Show</span></label>
+                <input type="password" id="password" name="password" minlength="8" required>
+                <label for="confirm">Confirm Password<i class="las la-check match"></i></label>
+                <input type="password" id="confirm" name="confirm" minlength="8" required>
+                <button type="submit">Create Account</button>
             </form>
         </div>
         <div class="column-right">
